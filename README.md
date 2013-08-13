@@ -6,7 +6,7 @@ Simple middleware and method for Browserify to add sass styles to the browser.
 
 Create the bundle:
 ```javascript
-bundle.use(require("sassify"));
+bundle.transform(require("sassify"));
 ```
 
 Client-side:
