@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/davidguttman/sassify.git"
+  },
   "keywords": [
     "browserify",
     "css",
@@ -14,10 +17,15 @@
   ],
   "browserify": "./lib/sassify-browser.js",
   "author": "David Guttman",
-  "license": "BSD",
+  "license": "BSD-2-Clause",
   "dependencies": {
     "cssify": "0.1.0",
     "node-sass": "~0.4.4",
     "through": "~2.3.4"
-  }
+  },
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/davidguttman/sassify/issues"
+  },
+  "homepage": "https://github.com/davidguttman/sassify"
 }
