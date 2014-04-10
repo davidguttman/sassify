@@ -2,6 +2,9 @@
 
 Simple middleware and method for Browserify to add sass styles to the browser.
 
+[![browser support](https://ci.testling.com/davidguttman/sassify.png)
+](https://ci.testling.com/davidguttman/sassify)
+
 # Example
 
 If you have a file `entry.js` that you want to require some css from `style.scss`:
