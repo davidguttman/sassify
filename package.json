@@ -20,7 +20,7 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "cssify": "0.1.0",
-    "node-sass": "~0.4.4",
+    "node-sass": "~0.8.4",
     "through": "~2.3.4"
   },
   "devDependencies": {},
