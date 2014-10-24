@@ -19,6 +19,7 @@
   "author": "David Guttman",
   "license": "BSD-2-Clause",
   "dependencies": {
+    "browserify": "^6.1.0",
     "cssify": "^0.6.0",
     "node-sass": "^1.0.1",
     "through2": "^0.6.3"
