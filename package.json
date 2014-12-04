@@ -19,14 +19,14 @@
   "author": "David Guttman",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "browserify": "^6.1.0",
+    "browserify": "^7.0.0",
     "cssify": "^0.6.0",
-    "node-sass": "^1.0.1",
+    "node-sass": "^1.2.3",
     "through2": "^0.6.3"
   },
   "devDependencies": {
-    "tape": "^2.12.3",
-    "testling": "^1.6.1"
+    "tape": "^3.0.3",
+    "testling": "^1.7.1"
   },
   "bugs": {
     "url": "https://github.com/davidguttman/sassify/issues"
