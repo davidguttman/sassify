@@ -2,10 +2,9 @@
 
 Simple middleware and method for Browserify to add sass styles to the browser.
 
-[![browser support](https://ci.testling.com/davidguttman/sassify.png)
-](https://ci.testling.com/davidguttman/sassify)
+[![Browser Support](https://saucelabs.com/browser-matrix/call-a3.svg)](https://saucelabs.com/u/call-a3)
 
-[![Dependency Status](https://david-dm.org/davidguttman/sassify.svg)](https://david-dm.org/davidguttman/sassify) [![devDependency Status](https://david-dm.org/davidguttman/sassify/dev-status.svg)](https://david-dm.org/davidguttman/sassify#info=devDependencies)
+[![Dependency Status](https://david-dm.org/call-a3/sassify.svg)](https://david-dm.org/call-a3/sassify) [![devDependency Status](https://david-dm.org/call-a3/sassify/dev-status.svg)](https://david-dm.org/call-a3/sassify#info=devDependencies)
 
 # Example
 

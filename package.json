@@ -4,7 +4,7 @@
   "description": "Browserify middleware for adding required styles to the page.",
   "main": "index.js",
   "scripts": {
-    "test": "browserify -t . -r ./index.js:sassify test/*.js | testling"
+    "test": "zuul -- test/*.js"
   },
   "repository": {
     "type": "git",
@@ -22,35 +22,17 @@
   "dependencies": {
     "browserify-transform-tools": "^1.2.1",
     "cssify": "^0.6.0",
-    "node-sass": "^1.2.3",
-    "through2": "^0.6.3"
+    "node-sass": "^1.2.3"
   },
   "devDependencies": {
-    "browserify": "^7.0.0",
     "tape": "^3.0.3",
-    "testling": "^1.7.1"
+    "zuul": "^1.15.1"
   },
   "bugs": {
     "url": "https://github.com/davidguttman/sassify/issues"
   },
   "homepage": "https://github.com/davidguttman/sassify",
-  "testling": {
-    "files": "test/*.js",
-    "browsers": [
-      "ie/8..latest",
-      "firefox/17..latest",
-      "firefox/nightly",
-      "chrome/22..latest",
-      "chrome/canary",
-      "opera/12..latest",
-      "opera/next",
-      "safari/5.1..latest",
-      "ipad/6.0..latest",
-      "iphone/6.0..latest",
-      "android-browser/4.2..latest"
-    ]
-  },
   "sassify": {
-  	"auto-inject": true
+    "auto-inject": true
   }
 }
