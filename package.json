@@ -12,6 +12,7 @@
   },
   "keywords": [
     "browserify",
+    "browserify-plugin",
     "css",
     "middleware"
   ],
@@ -19,12 +20,13 @@
   "author": "David Guttman",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "browserify": "^7.0.0",
+    "browserify-transform-tools": "^1.2.1",
     "cssify": "^0.6.0",
     "node-sass": "^1.2.3",
     "through2": "^0.6.3"
   },
   "devDependencies": {
+    "browserify": "^7.0.0",
     "tape": "^3.0.3",
     "testling": "^1.7.1"
   },
@@ -47,5 +49,8 @@
       "iphone/6.0..latest",
       "android-browser/4.2..latest"
     ]
+  },
+  "sassify": {
+  	"auto-inject": true
   }
 }
