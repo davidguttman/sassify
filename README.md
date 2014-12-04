@@ -42,11 +42,7 @@ SASS allows one to `@import` other SASS files. This module synchronously imports
 
 # Install
 
-With [npm](https://npmjs.org):
-
-```
-npm install sassify
-```
+[![sassify](https://nodei.co/npm/sassify.png?mini=true)](https://nodei.co/npm/sassify)
 
 # License
 
