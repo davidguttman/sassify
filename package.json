@@ -4,7 +4,7 @@
   "description": "Browserify middleware for adding required styles to the page.",
   "main": "index.js",
   "scripts": {
-    "test": "zuul -- test/*.js"
+    "test": "browserify -t . -r ./index.js:sassify test/*.js | tape-run"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "tape": "^3.0.3",
-    "zuul": "^1.15.2"
+    "tape-run": "^0.3.0"
   },
   "bugs": {
     "url": "https://github.com/davidguttman/sassify/issues"
