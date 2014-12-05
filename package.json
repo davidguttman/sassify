@@ -25,6 +25,7 @@
     "node-sass": "^1.2.3"
   },
   "devDependencies": {
+    "browserify": "^7.0.0",
     "tape": "^3.0.3",
     "tape-run": "^0.3.0"
   },
