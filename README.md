@@ -4,6 +4,8 @@ Simple middleware and method for Browserify to add sass styles to the browser.
 
 [![Build Status](https://travis-ci.org/call-a3/sassify.svg?branch=master)](https://travis-ci.org/call-a3/sassify) [![Dependency Status](https://david-dm.org/call-a3/sassify.svg)](https://david-dm.org/call-a3/sassify) [![devDependency Status](https://david-dm.org/call-a3/sassify/dev-status.svg)](https://david-dm.org/call-a3/sassify#info=devDependencies)
 
+_Currently breaks on node 0.11.x with node-sass 1.2.3 as documented in [node-sass issue #550](https://github.com/sass/node-sass/issues/550). If this affects you try to revert the node-sass version to 1.2.2_
+
 # Example
 
 If you have a file `entry.js` that you want to require some css from `style.scss`:
