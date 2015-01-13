@@ -4,7 +4,7 @@
   "description": "Browserify middleware for adding required styles to the page.",
   "main": "index.js",
   "scripts": {
-    "test": "browserify -t . -r ./index.js:sassify test/*.js -o test_pack.js && cat test_pack.js | tape-run -b phantom | tap-spec && cat test_pack.js | tape-run -b firefox | tap-spec"
+    "test": "browserify -t . -r ./index.js:sassify test/*.js -o test_pack.js && cat test_pack.js | tape-run -b firefox | tap-spec && cat test_pack.js | tape-run -b phantom | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -51,13 +51,13 @@
   ],
   "license": "BSD-2-Clause",
   "dependencies": {
-    "browserify-transform-tools": "^1.2.1",
+    "browserify-transform-tools": "^1.2.2",
     "cssify": "^0.6.0",
     "node-sass": "^2.0.0-beta"
   },
   "devDependencies": {
-    "browserify": "^7.0.0",
-    "tap-spec": "^2.1.1",
+    "browserify": "^8.1.0",
+    "tap-spec": "^2.1.2",
     "tape": "^3.0.3",
     "tape-run": "^0.3.0"
   },
