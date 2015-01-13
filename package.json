@@ -38,13 +38,22 @@
       "name": "Alexander Slansky",
       "email": "alexander@slansky.net",
       "url": "http://slansky.net/"
+    },
+    {
+      "name": "Alec Perkins",
+      "email": "mail@alecperkins.me",
+      "url": "http://alecperkins.net/"
+    },
+    {
+      "name": "Igor Ovsyannikov",
+      "url": "https://github.com/ggarek"
     }
   ],
   "license": "BSD-2-Clause",
   "dependencies": {
     "browserify-transform-tools": "^1.2.1",
     "cssify": "^0.6.0",
-    "node-sass": "^1.2.3"
+    "node-sass": "^2.0.0-beta"
   },
   "devDependencies": {
     "browserify": "^7.0.0",
