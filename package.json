@@ -4,7 +4,7 @@
   "description": "Browserify middleware for adding required styles to the page.",
   "main": "index.js",
   "scripts": {
-    "test": "browserify -t . -r ./index.js:sassify test/*.js | testling"
+    "test": "browserify -t . -r ./index.js:sassify test/*.js -o test_pack.js && cat test_pack.js | tape-run -b firefox | tap-spec && cat test_pack.js | tape-run -b phantom | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -12,40 +12,60 @@
   },
   "keywords": [
     "browserify",
+    "browserify-plugin",
     "css",
     "middleware"
   ],
   "browser": "./lib/sassify-browser.js",
   "author": "David Guttman",
+  "contributors": [
+    {
+      "name": "Adriaan Callaerts",
+      "email": "adriaan.callaerts@gmail.com",
+      "url": "https://github.com/call-a3"
+    },
+    {
+      "name": "Péter Gombos",
+      "email": "peter@gombos.no",
+      "url": "http://www.gombos.no/"
+    },
+    {
+      "name": "Jeffrey Ling",
+      "email": "jeff@bench.co",
+      "url": "https://github.com/jeffling"
+    },
+    {
+      "name": "Alexander Slansky",
+      "email": "alexander@slansky.net",
+      "url": "http://slansky.net/"
+    },
+    {
+      "name": "Alec Perkins",
+      "email": "mail@alecperkins.me",
+      "url": "http://alecperkins.net/"
+    },
+    {
+      "name": "Igor Ovsyannikov",
+      "url": "https://github.com/ggarek"
+    }
+  ],
   "license": "BSD-2-Clause",
   "dependencies": {
-    "browserify": "^6.1.0",
+    "browserify-transform-tools": "^1.2.2",
     "cssify": "^0.6.0",
-    "node-sass": "^1.0.1",
-    "through2": "^0.6.3"
+    "node-sass": "^2.0.0-beta"
   },
   "devDependencies": {
-    "tape": "^2.12.3",
-    "testling": "^1.6.1"
+    "browserify": "^8.1.0",
+    "tap-spec": "^2.1.2",
+    "tape": "^3.0.3",
+    "tape-run": "^0.3.0"
   },
   "bugs": {
     "url": "https://github.com/davidguttman/sassify/issues"
   },
   "homepage": "https://github.com/davidguttman/sassify",
-  "testling": {
-    "files": "test/*.js",
-    "browsers": [
-      "ie/8..latest",
-      "firefox/17..latest",
-      "firefox/nightly",
-      "chrome/22..latest",
-      "chrome/canary",
-      "opera/12..latest",
-      "opera/next",
-      "safari/5.1..latest",
-      "ipad/6.0..latest",
-      "iphone/6.0..latest",
-      "android-browser/4.2..latest"
-    ]
+  "sassify": {
+    "auto-inject": true
   }
 }
