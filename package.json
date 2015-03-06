@@ -53,7 +53,7 @@
   "dependencies": {
     "browserify-transform-tools": "^1.2.2",
     "cssify": "^0.6.0",
-    "node-sass": "^2.0.0-beta"
+    "node-sass": "^2.0.1"
   },
   "devDependencies": {
     "browserify": "^8.1.0",
