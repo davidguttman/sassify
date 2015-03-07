@@ -2,9 +2,9 @@
 
 Simple middleware and method for Browserify to add [Sass](http://sass-lang.com) styles to the browser.
 
-[![Build Status](https://travis-ci.org/call-a3/sassify.svg?branch=master)](https://travis-ci.org/call-a3/sassify) [![Dependency Status](https://david-dm.org/call-a3/sassify.svg)](https://david-dm.org/call-a3/sassify) [![devDependency Status](https://david-dm.org/call-a3/sassify/dev-status.svg)](https://david-dm.org/call-a3/sassify#info=devDependencies)
+[![Build Status](https://travis-ci.org/davidguttman/sassify.svg?branch=develop)](https://travis-ci.org/davidguttman/sassify) [![Dependency Status](https://david-dm.org/davidguttman/sassify.svg)](https://david-dm.org/davidguttman/sassify) [![devDependency Status](https://david-dm.org/davidguttman/sassify/dev-status.svg)](https://david-dm.org/davidguttman/sassify#info=devDependencies)
 
-_Currently breaks in some cases on node 0.11.x with latest version (2.0.0-beta) of node-sass as documented in [node-sass issue #550](https://github.com/sass/node-sass/issues/550). This is also the reason why the current build is failing on node 0.11._
+_Currently breaks in some cases on node 0.11.x with latest version (2.0.1) of node-sass as documented in [node-sass issue #550](https://github.com/sass/node-sass/issues/550). This is also the reason why node 0.11 is currently not supported. Use at your own risk (though no actual risk is involved, it might just not work)._
 
 # Example
 
@@ -47,7 +47,7 @@ Sass allows one to `@import` other Sass files. This module synchronously imports
 
 # Install
 
-[![sassify](https://nodei.co/npm/sassify.png?mini=true)](https://nodei.co/npm/sassify)
+[![sassify](https://nodei.co/npm/sassify.png?small=true)](https://nodei.co/npm/sassify)
 
 # License
 
