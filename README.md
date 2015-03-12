@@ -51,5 +51,5 @@ Sass allows one to `@import` other Sass files. This module synchronously imports
 
 # License
 
-MIT
+[MIT](/LICENSE)
 
