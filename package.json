@@ -4,7 +4,8 @@
   "description": "Browserify middleware for adding required styles to the page.",
   "main": "index.js",
   "scripts": {
-    "test": "browserify -t . -r ./index.js:sassify test/*.js -o test_pack.js && cat test_pack.js | tape-run -b firefox | tap-spec && cat test_pack.js | tape-run -b phantom | tap-spec"
+    "test": "browserify -t . -r ./index.js:sassify test/*.js -o test_pack.js && cat test_pack.js | tape-run -b firefox | tap-spec && cat test_pack.js | tape-run -b phantom | tap-spec",
+    "test-importer": "node_modules/.bin/mocha test/importer.js"
   },
   "repository": {
     "type": "git",
@@ -57,9 +58,11 @@
   },
   "devDependencies": {
     "browserify": "^9.0.3",
+    "mocha": "^2.2.1",
     "tap-spec": "^2.2.2",
     "tape": "^3.5.0",
-    "tape-run": "^0.3.0"
+    "tape-run": "^0.3.0",
+    "watchify": "^2.6.0"
   },
   "bugs": {
     "url": "https://github.com/davidguttman/sassify/issues"
