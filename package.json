@@ -17,7 +17,9 @@
     "middleware"
   ],
   "browser": "./lib/sassify-browser.js",
-  "author": "David Guttman",
+  "author": {
+    "name": "David Guttman"
+  },
   "contributors": [
     {
       "name": "Adriaan Callaerts",
@@ -47,6 +49,11 @@
     {
       "name": "Igor Ovsyannikov",
       "url": "https://github.com/ggarek"
+    },
+    {
+      "name": "Davide Fiorello",
+      "email": "davide@codeflyer.com",
+      "url": "https://github.com/codeflyer"
     }
   ],
   "license": "BSD-2-Clause",

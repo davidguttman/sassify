@@ -40,6 +40,36 @@ When you compile your app, just pass `-t sassify` to browserify:
 ```
 $ browserify -t sassify entry.js > bundle.js
 ```
+### Gulp task example 
+...or you can do it using a gulp task.
+
+```javascript
+var gulp = require('gulp');
+var browserify = require('browserify');
+var sassify = require('sassify');
+var source = require('vinyl-source-stream');
+
+gulp.task('build', function(done) {
+  var result = browserify({})
+      .transform(sassify, {
+        'auto-inject': true, // Inject css directly in the code
+        base64Encode: false, // Use base64 to inject css
+        sourceMap: false // Add source map to the code
+      });
+
+  result.add('./entry.js');
+  result.bundle()
+      .pipe(source('output.js'))
+      .pipe(gulp.dest('./'))
+      .on('end', function(err) {
+        if (err) {
+          done(err);
+        } else {
+          done();
+        }
+      });
+});
+```
 
 ## Imports
 
