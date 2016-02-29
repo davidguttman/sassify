@@ -4,7 +4,7 @@
   "description": "Browserify middleware for adding required styles to the page.",
   "main": "index.js",
   "scripts": {
-    "test": "browserify -t . -r ./index.js:sassify test/*.js | testling"
+    "test": "browserify -t . -r ./index.js:sassify test/index.js | browser-run"
   },
   "repository": {
     "type": "git",
@@ -19,32 +19,17 @@
   "author": "David Guttman",
   "license": "BSD-2-Clause",
   "dependencies": {
+    "browserify": "^13.0.0",
     "cssify": "^0.5.0",
-    "node-sass": "^0.8.4",
+    "node-sass": "^3.4.2",
     "through": "^2.3.4"
   },
   "devDependencies": {
-    "tape": "^2.12.3",
-    "testling": "^1.6.1"
+    "browser-run": "^3.0.8",
+    "tape": "^2.12.3"
   },
   "bugs": {
     "url": "https://github.com/davidguttman/sassify/issues"
   },
-  "homepage": "https://github.com/davidguttman/sassify",
-  "testling": {
-    "files": "test/*.js",
-    "browsers": [
-      "ie/8..latest",
-      "firefox/17..latest",
-      "firefox/nightly",
-      "chrome/22..latest",
-      "chrome/canary",
-      "opera/12..latest",
-      "opera/next",
-      "safari/5.1..latest",
-      "ipad/6.0..latest",
-      "iphone/6.0..latest",
-      "android-browser/4.2..latest"
-    ]
-  }
+  "homepage": "https://github.com/davidguttman/sassify"
 }
