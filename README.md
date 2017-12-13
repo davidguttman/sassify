@@ -56,7 +56,10 @@ gulp.task('build', function(done) {
         sourceMap: false, // Add source map to the code
         // when 'no-auto-inject' is set to `true`, `require('./style.scss')` won't inject styles
         // it will simply return the css as a string
-        'no-auto-inject': false
+        'no-auto-inject': false,
+        flushcssoutput: function(data){
+          fs.appendFileSync('build/index.css', data);
+        }
       });
 
   result.add('./entry.js');
