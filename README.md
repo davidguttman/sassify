@@ -52,9 +52,11 @@ var source = require('vinyl-source-stream');
 gulp.task('build', function(done) {
   var result = browserify({})
       .transform(sassify, {
-        'auto-inject': true, // Inject css directly in the code
         base64Encode: false, // Use base64 to inject css
-        sourceMap: false // Add source map to the code
+        sourceMap: false, // Add source map to the code
+        // when 'no-auto-inject' is set to `true`, `require('./style.scss')` won't inject styles
+        // it will simply return the css as a string
+        'no-auto-inject': false
       });
 
   result.add('./entry.js');
