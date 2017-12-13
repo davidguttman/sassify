@@ -1,6 +1,6 @@
 {
   "name": "sassify",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Browserify middleware for adding required styles to the page.",
   "main": "index.js",
   "scripts": {
