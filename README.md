@@ -4,8 +4,6 @@ Simple middleware and method for Browserify to add [Sass](http://sass-lang.com) 
 
 [![Build Status](https://travis-ci.org/davidguttman/sassify.svg?branch=develop)](https://travis-ci.org/davidguttman/sassify) [![Dependency Status](https://david-dm.org/davidguttman/sassify.svg)](https://david-dm.org/davidguttman/sassify) [![devDependency Status](https://david-dm.org/davidguttman/sassify/dev-status.svg)](https://david-dm.org/davidguttman/sassify#info=devDependencies)
 
-_Currently breaks in some cases on node 0.11.x with latest version (2.0.1) of node-sass as documented in [node-sass issue #550](https://github.com/sass/node-sass/issues/550). This is also the reason why node 0.11 is currently not supported. Use at your own risk (though no actual risk is involved, it might just not work)._
-
 # Example
 
 If you have a file `entry.js` that you want to require some css from `style.scss`:
@@ -56,7 +54,10 @@ gulp.task('build', function(done) {
         sourceMap: false, // Add source map to the code
         // when 'no-auto-inject' is set to `true`, `require('./style.scss')` won't inject styles
         // it will simply return the css as a string
-        'no-auto-inject': false
+        'no-auto-inject': false,
+        flushcssoutput: function(data){
+          fs.appendFileSync('build/index.css', data);
+        }
       });
 
   result.add('./entry.js');
